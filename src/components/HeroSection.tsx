@@ -89,7 +89,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Enhanced Profile Section */}
+          {/* Enhanced Profile Section with Portfolio Image */}
           <div className="flex justify-center lg:justify-end animate-fade-in">
             <div className="relative">
               {/* Main profile container */}
@@ -99,11 +99,13 @@ const HeroSection = () => {
                   <div className="w-full h-full rounded-full bg-slate-900"></div>
                 </div>
                 
-                {/* Inner profile circle */}
-                <div className="absolute inset-4 rounded-full bg-gradient-to-br from-cyan-400/20 to-blue-500/20 backdrop-blur-sm border border-cyan-400/30 flex items-center justify-center">
-                  <div className="text-8xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                    SN
-                  </div>
+                {/* Inner profile circle with image */}
+                <div className="absolute inset-4 rounded-full bg-gradient-to-br from-cyan-400/20 to-blue-500/20 backdrop-blur-sm border border-cyan-400/30 overflow-hidden">
+                  <img 
+                    src="https://i.postimg.cc/QxxkwhZP/linkdein.jpg" 
+                    alt="Shiva Nagalla - AI/ML Engineer"
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </div>
               </div>
 
