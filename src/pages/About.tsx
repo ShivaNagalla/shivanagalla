@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Download, Moon, Sun, Menu, X, MapPin, Calendar, Award } from 'lucide-react';
@@ -99,10 +98,20 @@ const About = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6 animate-fade-in">
-              <p className="text-xl text-gray-300 leading-relaxed">
-                I started my software journey from photography. Through that, I learned to love the process of creating from scratch. Since then, this has led me to software development as it fulfills my love for learning and building things.
-              </p>
+            <div className="space-y-8 animate-fade-in">
+              <div className="space-y-6">
+                <p className="text-xl text-gray-300 leading-relaxed">
+                  My journey into software development began in an unexpected place—through the lens of a camera. Photography taught me to appreciate the art of creating something beautiful from nothing, frame by frame.
+                </p>
+                
+                <p className="text-xl text-gray-300 leading-relaxed">
+                  This passion for creation naturally evolved into software development, where I discovered the same satisfaction in building digital solutions from the ground up. The process of transforming ideas into functional, impactful applications continues to drive my curiosity and dedication to learning.
+                </p>
+                
+                <p className="text-xl text-gray-300 leading-relaxed">
+                  Today, I channel that creative energy into developing AI/ML solutions, combining my love for both artistic vision and technical innovation.
+                </p>
+              </div>
               
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
