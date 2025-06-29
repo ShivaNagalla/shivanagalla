@@ -63,13 +63,19 @@ const HeroSection = () => {
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Button 
-                variant="outline" 
-                className="border-2 border-cyan-400/50 bg-slate-800/50 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 px-8 py-4 rounded-xl text-lg font-medium transition-all duration-300 hover:scale-105 backdrop-blur-sm"
+              <a 
+                href="https://drive.google.com/file/d/1hIcjhS6Mo48f7O1g9i_Vy0YaxhDfO0MJ/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Download className="mr-2 w-5 h-5" />
-                Download Resume
-              </Button>
+                <Button 
+                  variant="outline" 
+                  className="border-2 border-cyan-400/50 bg-slate-800/50 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 px-8 py-4 rounded-xl text-lg font-medium transition-all duration-300 hover:scale-105 backdrop-blur-sm"
+                >
+                  <Download className="mr-2 w-5 h-5" />
+                  Download Resume
+                </Button>
+              </a>
             </div>
 
             {/* Stats */}
