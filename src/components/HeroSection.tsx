@@ -1,11 +1,8 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Download, Sparkles, Code, Brain } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const HeroSection = () => {
-  return (
-    <section className="relative pt-32 pb-20 px-6 sm:px-8 overflow-hidden">
+  return <section className="relative pt-32 pb-20 px-6 sm:px-8 overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl"></div>
@@ -32,7 +29,7 @@ const HeroSection = () => {
                 Hello<span className="text-cyan-400">.</span>
               </h1>
               <h2 className="text-4xl md:text-5xl font-light text-gray-300">
-                I'm <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-bold">Shiva</span>
+                I'm <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-bold">Shiva Nagalla</span>
               </h2>
             </div>
             
@@ -63,15 +60,8 @@ const HeroSection = () => {
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <a 
-                href="https://drive.google.com/file/d/1hIcjhS6Mo48f7O1g9i_Vy0YaxhDfO0MJ/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button 
-                  variant="outline" 
-                  className="border-2 border-cyan-400/50 bg-slate-800/50 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 px-8 py-4 rounded-xl text-lg font-medium transition-all duration-300 hover:scale-105 backdrop-blur-sm"
-                >
+              <a href="https://drive.google.com/file/d/1hIcjhS6Mo48f7O1g9i_Vy0YaxhDfO0MJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="border-2 border-cyan-400/50 bg-slate-800/50 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 px-8 py-4 rounded-xl text-lg font-medium transition-all duration-300 hover:scale-105 backdrop-blur-sm">
                   <Download className="mr-2 w-5 h-5" />
                   Download Resume
                 </Button>
@@ -101,17 +91,15 @@ const HeroSection = () => {
               {/* Main profile container */}
               <div className="relative w-96 h-96">
                 {/* Outer glow ring */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 p-1 animate-spin" style={{ animationDuration: '8s' }}>
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 p-1 animate-spin" style={{
+                animationDuration: '8s'
+              }}>
                   <div className="w-full h-full rounded-full bg-slate-900"></div>
                 </div>
                 
                 {/* Inner profile circle with image */}
                 <div className="absolute inset-4 rounded-full bg-gradient-to-br from-cyan-400/20 to-blue-500/20 backdrop-blur-sm border border-cyan-400/30 overflow-hidden">
-                  <img 
-                    src="https://i.postimg.cc/QxxkwhZP/linkdein.jpg" 
-                    alt="Shiva Nagalla - AI/ML Engineer"
-                    className="w-full h-full object-cover rounded-full"
-                  />
+                  <img src="https://i.postimg.cc/QxxkwhZP/linkdein.jpg" alt="Shiva Nagalla - AI/ML Engineer" className="w-full h-full object-cover rounded-full" />
                 </div>
               </div>
 
@@ -128,8 +116,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
